@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
-            prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane id="top3" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="52.0" layoutY="29.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
             <Label layoutX="90.0" layoutY="41.0" text="Barn">
@@ -30,7 +34,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="181.0" layoutY="35.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
             <Label layoutX="344.0" layoutY="41.0" text="Nutrition">
@@ -40,7 +44,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="324.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
             <Label layoutX="485.0" layoutY="41.0" text="Production">
@@ -50,7 +54,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="459.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
             <Label layoutX="653.0" layoutY="41.0" text="Treatment">
@@ -60,7 +64,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="633.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
             <Label layoutX="821.0" layoutY="41.0" text="Costs">
@@ -70,7 +74,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="794.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
             <Label layoutX="955.0" layoutY="42.0" text="Employees">
@@ -80,7 +84,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="927.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
             <Label layoutX="1116.0" layoutY="42.0" text="Home">
@@ -90,10 +94,66 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="1089.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
+            <Text fontSmoothingType="LCD" layoutX="405.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="my-text1" text="View and manage all employees" wrappingWidth="363.4560241699219">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="24.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
+      <Button layoutX="991.0" layoutY="210.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-font-size: 20;" text="+ Add employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField layoutX="991.0" layoutY="275.0" prefHeight="26.0" prefWidth="191.0" promptText="Search ...." style="-fx-border-color: #d2b48c; -fx-border-width: 5; -fx-background-radius: 15; -fx-border-radius: 15;" />
+      <ComboBox layoutX="815.0" layoutY="280.0" prefWidth="150.0" promptText="Searched By" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-text-fill: #000000;" />
+      <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="368.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="214.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/eye.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="410.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-background-radius: 7;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="249.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-background-radius: 7;" text="View">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="532.0" layoutY="318.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/delete.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="567.0" layoutY="320.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="96.0" style="-fx-text-fill: white; -fx-background-color: red; -fx-background-radius: 7;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView layoutX="41.0" layoutY="384.0" prefHeight="246.0" prefWidth="1127.0" stylesheets="@../style2.css">
+         <columns>
+            <TableColumn editable="false" prefWidth="70.0" text="Salary" />
+            <TableColumn prefWidth="140.0" text="Employment history " />
+            <TableColumn prefWidth="125.0" text="Job  title" />
+            <TableColumn prefWidth="100.0" text="Gender" />
+            <TableColumn editable="false" minWidth="15.0" prefWidth="120.0" text="Date of birth " />
+            <TableColumn prefWidth="100.0" text=" Full name" />
+            <TableColumn prefWidth="75.0" text=" ID number" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
    </children>
 </AnchorPane>

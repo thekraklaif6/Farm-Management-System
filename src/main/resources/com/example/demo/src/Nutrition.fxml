@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
-            prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane id="top2" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
@@ -22,7 +21,7 @@
             </Label>
             <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="45.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
             <Label layoutX="217.0" layoutY="36.0" text="Animals">
@@ -32,7 +31,7 @@
             </Label>
             <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="180.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
             <Label layoutX="354.0" layoutY="37.0" text="Nutrition">
@@ -42,7 +41,7 @@
             </Label>
             <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="323.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
             <Label layoutX="500.0" layoutY="37.0" text="Production">
@@ -52,12 +51,12 @@
             </Label>
             <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="467.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="636.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
             <Label layoutX="667.0" layoutY="38.0" text="Treatment">
@@ -72,7 +71,7 @@
             </Label>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="787.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
             <Label layoutX="926.0" layoutY="38.0" text="Employees">
@@ -92,12 +91,12 @@
             </Label>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="895.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="1048.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
          </children></Pane>
