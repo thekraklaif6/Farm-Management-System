@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+   <children>
+      <Pane id="top2" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
+         <children>
+            <Label layoutX="89.0" layoutY="36.0" text="Brans">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="45.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/barn.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="217.0" layoutY="36.0" text="Animals">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="180.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/cattle.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="354.0" layoutY="37.0" text="Nutrition">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="323.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/wheat.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="500.0" layoutY="37.0" text="Production">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="467.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="636.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/syringe.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="667.0" layoutY="38.0" text="Treatment">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="811.0" layoutY="38.0" text="Costs">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="787.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/money-bag.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="926.0" layoutY="38.0" text="Employees">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="156.0" text="Daily Feeding Schedule">
+               <font>
+                  <Font name="High Tower Text Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="1083.0" layoutY="38.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="895.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/employees.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="1048.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/home.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Button id="button1" layoutX="929.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="227.0" stylesheets="@style.css" text="+  Add Feeding Record">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView id="table1" layoutX="333.0" layoutY="285.0" prefHeight="273.0" prefWidth="473.0" stylesheets="@style.css">
+        <columns>
+          <TableColumn prefWidth="115.99996948242188" text="Meal Number" />
+            <TableColumn prefWidth="132.66668701171875" text="             Barn" />
+            <TableColumn prefWidth="119.33331298828125" text="     Feed  Type" />
+            <TableColumn prefWidth="85.33331298828125" text="Quantity" />
+        </columns>
+      </TableView>
+   </children>
+
+</AnchorPane>
