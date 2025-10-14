@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+.imageView{
+-fx-max-hight :1080px;
+-fx-max-width :700px;
+}
+.mainLabel {
+  -fx-font-family: "Lobster", sans-serif;
+ -fx-font-weight: 650;
+  -fx-font-style: normal;
+ -fx-text-fill:rgb(188, 177, 88);
+}
+.welcomeLabel{
+-fx-font-family: "Lobster", sans-serif;
+ -fx-font-weight: 650;
+  -fx-font-style: normal;
+ -fx-text-fill: "black";
+}
+
+.my-text1 {
+ font-family: "Playwrite DE SAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
