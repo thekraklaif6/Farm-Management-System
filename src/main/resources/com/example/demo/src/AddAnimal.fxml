@@ -11,83 +11,86 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
    <children>
-      <Pane id="background2" layoutX="178.0" layoutY="15.0" prefHeight="670.0" prefWidth="706.0" stylesheets="@style.css">
+      <Pane id="background2" layoutX="187.0" layoutY="29.0" prefHeight="670.0" prefWidth="706.0" stylesheets="@style.css">
          <children>
             <Label layoutX="259.0" layoutY="30.0" text="Add new Barn">
                <font>
                   <Font name="Bell MT" size="29.0" />
                </font>
             </Label>
-            <Label layoutX="57.0" layoutY="85.0" text="Barn name  :">
+            <Label layoutX="57.0" layoutY="85.0" text="Animal name:">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
             <TextField layoutX="205.0" layoutY="85.0" prefHeight="25.0" prefWidth="165.0" promptText=" enter the name.." style="-fx-background-radius: 10; -fx-border-color: #d2b48c; -fx-border-radius: 10;" />
-            <Label layoutX="51.0" layoutY="137.0" text="Type of barn :">
+            <Label layoutX="51.0" layoutY="137.0" text="Type of animal :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Spinner layoutX="209.0" layoutY="187.0" />
-            <Label layoutX="51.0" layoutY="186.0" text="Capacity :">
+            <Spinner layoutX="119.0" layoutY="187.0" />
+            <Label layoutX="51.0" layoutY="186.0" text="Age :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="50.0" layoutY="229.0" text="Operational status :">
+            <Label layoutX="50.0" layoutY="229.0" text="Health status :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="47.0" layoutY="279.0" text="Current number:">
+            <Label layoutX="47.0" layoutY="279.0" text="Current weight (KG) :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="47.0" layoutY="321.0" text="Responsible employee:">
+            <Label layoutX="45.0" layoutY="323.0" text="Purchase price :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="47.0" layoutY="374.0" prefHeight="27.0" prefWidth="140.0" text="barn area  (m):">
+            <Label layoutX="47.0" layoutY="374.0" prefHeight="27.0" prefWidth="140.0" text="Gender :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
             <RadioButton layoutX="209.0" layoutY="142.0" mnemonicParsing="false" text="Cows" />
             <RadioButton layoutX="294.0" layoutY="142.0" mnemonicParsing="false" text="Sheep" />
-            <Spinner layoutX="213.0" layoutY="280.0" />
-            <RadioButton layoutX="241.0" layoutY="234.0" mnemonicParsing="false" text="Active" />
-            <RadioButton layoutX="323.0" layoutY="234.0" mnemonicParsing="false" text="Under maintenance" />
-            <RadioButton layoutX="469.0" layoutY="234.0" mnemonicParsing="false" text="Deserted" />
-            <TextField layoutX="266.0" layoutY="321.0" prefHeight="25.0" prefWidth="165.0" promptText=" enter the name.." style="-fx-background-radius: 10; -fx-border-color: #d2b48c; -fx-border-radius: 10;" />
-            <Spinner layoutX="205.0" layoutY="375.0" />
-            <Label layoutX="46.0" layoutY="427.0" prefHeight="27.0" prefWidth="318.0" text="Location of the barn within the farm:">
+            <Spinner layoutX="247.0" layoutY="280.0" />
+            <RadioButton layoutX="204.0" layoutY="234.0" mnemonicParsing="false" text="alive" />
+            <RadioButton layoutX="279.0" layoutY="234.0" mnemonicParsing="false" text="Dead" />
+            <RadioButton layoutX="361.0" layoutY="234.0" mnemonicParsing="false" text="Sick" />
+            <Label layoutX="46.0" layoutY="427.0" prefHeight="27.0" prefWidth="318.0" text=" ID of barn:">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="44.0" layoutY="474.0" prefHeight="27.0" prefWidth="194.0" text="Date of establishment:">
+            <Label layoutX="44.0" layoutY="474.0" prefHeight="27.0" prefWidth="194.0" text="Date of birth:">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="51.0" layoutY="535.0" prefHeight="27.0" prefWidth="82.0" text="Notes :">
+            <Label layoutX="51.0" layoutY="535.0" prefHeight="27.0" prefWidth="121.0" text="Breed details :">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="386.0" layoutY="427.0" prefHeight="27.0" prefWidth="212.0" promptText=" enter the location ..." style="-fx-background-radius: 10; -fx-border-color: #d2b48c; -fx-border-radius: 10;" />
-            <DatePicker layoutX="261.0" layoutY="475.0" />
-            <TextArea layoutX="119.0" layoutY="518.0" prefHeight="61.0" prefWidth="527.0" />
+            <DatePicker layoutX="180.0" layoutY="475.0" />
+            <TextArea layoutX="185.0" layoutY="518.0" prefHeight="61.0" prefWidth="461.0" />
             <Button layoutX="296.0" layoutY="613.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-font-size: 20;" text="+ Add " textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
+            <RadioButton layoutX="427.0" layoutY="231.0" mnemonicParsing="false" text="Sold" />
+            <RadioButton layoutX="151.0" layoutY="379.0" mnemonicParsing="false" text="Male" />
+            <RadioButton layoutX="243.0" layoutY="379.0" mnemonicParsing="false" text="Famale" />
+            <Spinner layoutX="205.0" layoutY="323.0" />
+            <Spinner layoutX="169.0" layoutY="428.0" />
          </children>
       </Pane>
    </children>
