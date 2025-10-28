@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
-            prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane id="background2" layoutX="298.0" layoutY="61.0" prefHeight="483.0" prefWidth="557.0" stylesheets="@style.css">
          <children>
@@ -27,24 +26,24 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <RadioButton layoutX="143.0" layoutY="160.0" mnemonicParsing="false" text="Sheep">
+            <RadioButton layoutX="138.0" layoutY="169.0" mnemonicParsing="false" text="Sheep">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="284.0" layoutY="159.0" mnemonicParsing="false" text="Cow">
+            <RadioButton layoutX="279.0" layoutY="168.0" mnemonicParsing="false" text="Cow">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>
             </RadioButton>
             <ImageView fitHeight="43.0" fitWidth="38.0" layoutX="209.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/sheep.png" />
+                  <Image url="@../../../../../../../../../Downloads/sheep.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="353.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/cow%20(1).png" />
+                  <Image url="@../../../../../../../../../Downloads/cow%20(1).png" />
                </image>
             </ImageView>
             <DatePicker layoutX="118.0" layoutY="103.0" />
@@ -65,9 +64,9 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="b1" layoutX="276.0" layoutY="296.0" minWidth="38.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="38.0" stylesheets="@style.css" text="KG" />
-            <Button id="b2" layoutX="342.0" layoutY="297.0" mnemonicParsing="false" stylesheets="@style.css" text="L" />
-            <Button id="add2" layoutX="250.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="97.0" text="Add" />
+            <Button id="b1" layoutX="276.0" layoutY="296.0" minWidth="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" stylesheets="@style.css" text="KG" />
+            <Button id="b2" layoutX="327.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" stylesheets="@style.css" text="L" />
+            <Button id="add2" layoutX="248.0" layoutY="390.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="97.0" text="Add" />
          </children>
       </Pane>
    </children>
