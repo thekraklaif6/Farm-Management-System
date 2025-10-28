@@ -14,7 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane id="background1" layoutX="268.0" layoutY="71.0" prefHeight="480.0" prefWidth="655.0" stylesheets="@style.css">
+      <Pane id="background1" layoutX="265.0" layoutY="72.0" prefHeight="480.0" prefWidth="655.0" stylesheets="@style.css">
          <effect>
             <Blend mode="SOFT_LIGHT" />
          </effect>
@@ -24,39 +24,39 @@
                   <Font name="Bell MT" size="36.0" />
                </font>
             </Label>
-            <ComboBox fx:id="barnComboBox" layoutX="126.0" layoutY="116.0" prefHeight="25.0" prefWidth="216.0" />
-            <Label layoutX="17.0" layoutY="120.0" text="Select Barn :">
+            <ComboBox fx:id="barnComboBox" layoutX="126.0" layoutY="129.0" prefHeight="25.0" prefWidth="216.0" />
+            <Label layoutX="17.0" layoutY="131.0" text="Select Barn :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <RadioButton id="barleyb" layoutX="113.0" layoutY="178.0" mnemonicParsing="false" text="Barley" />
+            <RadioButton id="barleyb" layoutX="117.0" layoutY="186.0" mnemonicParsing="false" text="Barley" />
             <Label layoutX="21.0" layoutY="183.0" text="Feed Type :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <RadioButton id="grassb" layoutX="228.0" layoutY="178.0" mnemonicParsing="false" text="Grass" />
-            <RadioButton id="wheatb" layoutX="360.0" layoutY="178.0" mnemonicParsing="false" text="Corn" />
-            <RadioButton id="mixedfeedb" layoutX="482.0" layoutY="178.0" mnemonicParsing="false" text="Mixed Feed" />
-            <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="188.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+            <RadioButton id="grassb" layoutX="234.0" layoutY="186.0" mnemonicParsing="false" text="Grass" />
+            <RadioButton id="wheatb" layoutX="363.0" layoutY="186.0" mnemonicParsing="false" text="Corn" />
+            <RadioButton id="mixedfeedb" layoutX="482.0" layoutY="186.0" mnemonicParsing="false" text="Mixed Feed" />
+            <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="177.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/bag.png" />
+                  <Image url="@../../../../../../../../../Downloads/bag.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="306.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="294.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/grass.png" />
+                  <Image url="@../../../../../../../../../Downloads/grass.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="424.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="414.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/corn.png" />
+                  <Image url="@../../../../../../../../../Downloads/corn.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="594.0" layoutY="178.0" pickOnBounds="true">
+            <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="579.0" layoutY="180.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/sack.png" />
+                  <Image url="@../../../../../../../../../Downloads/sack.png" />
                </image>
             </ImageView>
             <Label layoutX="21.0" layoutY="245.0" text="Quantity (kg) :">
@@ -73,7 +73,7 @@
             <Spinner layoutX="126.0" layoutY="304.0" />
             <Button id="add1" layoutX="275.0" layoutY="388.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="135.0" text="Add" textFill="#f6f1f1">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Button>
          </children></Pane>
