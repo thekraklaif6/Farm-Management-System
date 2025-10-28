@@ -11,12 +11,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
    <children>
-      <Pane id="background2" layoutX="187.0" layoutY="29.0" prefHeight="670.0" prefWidth="706.0" stylesheets="@style.css">
+      <Pane id="background2" layoutX="187.0" layoutY="15.0" prefHeight="670.0" prefWidth="706.0" stylesheets="@style.css">
          <children>
-            <Label layoutX="259.0" layoutY="30.0" text="Add new Barn">
+            <Label layoutX="259.0" layoutY="30.0" text="Add new Animal">
                <font>
                   <Font name="Bell MT" size="29.0" />
                </font>

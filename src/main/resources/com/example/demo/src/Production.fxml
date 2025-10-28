@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -8,16 +13,96 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
-            prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+      <AnchorPane layoutX="97.0" layoutY="255.0" prefHeight="365.0" prefWidth="1040.0" styleClass="card" stylesheets="@cards.css">
+         <children>
+            <Text layoutX="273.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="MILK PRODUCT OVERVIEW" wrappingWidth="259.99999999999994" />
+            <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="227.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/milk.png" />
+               </image>
+            </ImageView>
+            <PieChart layoutX="259.0" layoutY="48.0" prefHeight="150.0" prefWidth="179.0" styleClass="chart-pie" stylesheets="@cards.css" />
+            <BarChart layoutX="605.0" layoutY="48.0" prefHeight="150.0" prefWidth="351.0" styleClass="chart-bar" stylesheets="@cards.css">
+              <xAxis>
+                <CategoryAxis prefHeight="4.0" prefWidth="253.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Pane prefHeight="366.0" prefWidth="200.0" style="-fx-background-color: #e8d1b3;" styleClass="sidebar" stylesheets="@cards.css">
+               <children>
+                  <Button layoutX="69.0" layoutY="78.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="115.0" styleClass="sidebar-button" stylesheets="@cards.css" text="MILK" />
+                  <Button layoutX="69.0" layoutY="136.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="115.0" styleClass="sidebar-button" stylesheets="@cards.css" text="Animal" />
+                  <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="37.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/milk.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="37.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/cattle.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="78.0" layoutY="196.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="97.0" styleClass="sidebar-button" stylesheets="@cards.css" text="WOOL" />
+                  <Button layoutX="78.0" layoutY="249.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="97.0" styleClass="sidebar-button" stylesheets="@cards.css" text="MEAT" />
+                  <Label layoutX="69.0" layoutY="30.0" prefHeight="32.0" prefWidth="97.0" text="DashBoard">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Icon content="FORMAT_LIST_BULLETED" layoutX="29.0" layoutY="30.0" prefHeight="32.0" prefWidth="40.0" />
+                  <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="37.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/knitting.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="37.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/meat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView layoutX="342.0" layoutY="217.0" prefHeight="122.0" prefWidth="521.0" stylesheets="@cards.css">
+              <columns>
+                <TableColumn prefWidth="100.0" text="      Price" />
+                <TableColumn prefWidth="100.0" text="     Quantity" />
+                  <TableColumn prefWidth="90.0" text="       Date" />
+                  <TableColumn minWidth="0.0" prefWidth="100.0" text="        Animal" />
+                  <TableColumn prefWidth="90.0" text="        ID" />
+              </columns>
+            </TableView>
+            <Label layoutX="655.0" layoutY="12.0" prefHeight="32.0" prefWidth="250.0" styleClass="card-title" text="Daily Milk Production (LITERS)">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font>
+            </Label>
+            <Circle fill="#996914" layoutX="482.0" layoutY="89.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#ccbf9d" layoutX="482.0" layoutY="116.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#fcd970" layoutX="482.0" layoutY="142.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="504.0" layoutY="80.0" text="Cow's Milk" />
+            <Label layoutX="504.0" layoutY="107.0" text="Goat's Milk" />
+            <Label layoutX="504.0" layoutY="133.0" text="Sheep's  Milk" />
+         </children>
+      </AnchorPane>
+      <Button id="button2" layoutX="946.0" layoutY="195.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="200.0" stylesheets="@style.css" text="+ Add Production Record" />
+      <Label layoutX="83.0" layoutY="157.0" text="Daily Production Record">
+         <font>
+            <Font name="High Tower Text Italic" size="36.0" />
+         </font>
+      </Label>
       <Pane id="top3" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="52.0" layoutY="29.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
             <Label layoutX="90.0" layoutY="41.0" text="Barn">
@@ -32,7 +117,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="181.0" layoutY="35.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
             <Label layoutX="344.0" layoutY="41.0" text="Nutrition">
@@ -42,7 +127,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="324.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
             <Label layoutX="485.0" layoutY="41.0" text="Production">
@@ -52,7 +137,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="459.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
             <Label layoutX="653.0" layoutY="41.0" text="Treatment">
@@ -62,7 +147,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="633.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
             <Label layoutX="821.0" layoutY="41.0" text="Costs">
@@ -72,7 +157,7 @@
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="794.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
             <Label layoutX="955.0" layoutY="42.0" text="Employees">
@@ -82,7 +167,7 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="927.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
             <Label layoutX="1116.0" layoutY="42.0" text="Home">
@@ -92,24 +177,10 @@
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="1089.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
-            <Label layoutX="131.0" layoutY="148.0" text="Daily Production Record">
-               <font>
-                  <Font name="High Tower Text Italic" size="36.0" />
-               </font>
-            </Label>
          </children>
       </Pane>
-      <Button id="button2" layoutX="940.0" layoutY="213.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="215.0" stylesheets="@style.css" text="+ Add Production Record" />
-      <TableView layoutX="295.0" layoutY="318.0" prefHeight="200.0" prefWidth="483.0" stylesheets="@style.css">
-        <columns>
-          <TableColumn prefWidth="113.33331298828125" text="Date" />
-          <TableColumn prefWidth="96.00006103515625" text="Nanimal" />
-            <TableColumn minWidth="0.0" prefWidth="159.33331298828125" text="Production Type" />
-            <TableColumn minWidth="0.0" prefWidth="94.66668701171875" text="Quantity" />
-        </columns>
-      </TableView>
    </children>
 </AnchorPane>

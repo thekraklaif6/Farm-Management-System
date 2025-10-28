@@ -1,0 +1,206 @@
+.text-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: "black";
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 5 10 5 10;
+}
+.text-button:hover {
+    -fx-text-fill: #e9d9c8;;
+}
+
+.text-button:pressed {
+    -fx-text-fill: "black";
+}
+
+/* ألوان عامة */
+.card{
+    -fx-background-color: #faf6f2; /* بيج فاتح جداً */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-radius: 10;
+}
+
+/* القائمة الجانبية */
+.sidebar {
+    -fx-background-color: #e9d9c8; /* بيج أساسي */
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-background-radius: 10;
+}
+
+/* الأزرار في القائمة الجانبية */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2f2f2f;
+    -fx-font-size: 14px;
+    -fx-padding: 10 15 10 15;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+/* عند تمرير الماوس */
+.sidebar-button:hover {
+    -fx-background-color: #efe4d7; /* لون فاتح أفتح من الخلفية */
+}
+
+/* الزر المُفعّل */
+.sidebar-button:focused, .sidebar-button:selected {
+    -fx-background-color: #f4ede4;
+    -fx-font-weight: bold;
+}
+
+/* أيقونة داخل الزر */
+.icon {
+    -fx-fit-width: 25;
+    -fx-fit-height: 25;
+}
+
+/* ----------- العناوين العامة ----------- */
+.title-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #9f734a;
+}
+
+/************** PIE CHART **************/
+.chart {
+    -fx-background-color: transparent; /* ما في خلفية */
+    -fx-padding: 15;
+}
+
+/* خلفية المخطط */
+.chart-content {
+    -fx-background-color: rgba(255,255,255,0.6);
+    -fx-background-radius: 10;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 2);
+}
+
+/* ألوان الشرائح */
+.default-color0.chart-pie { -fx-pie-color: #a07255; } /* بني ناعم */
+.default-color1.chart-pie { -fx-pie-color: #b8b2a6; } /* رمادي دافئ */
+.default-color2.chart-pie { -fx-pie-color: #e8ca6d; } /* أصفر ذهبي */
+
+/* تسميات الشرائح */
+.chart-pie-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-fill: #4b3b2c;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.7), 2, 0, 0, 0);
+}
+
+/* الليجند */
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+.chart-legend-item {
+    -fx-text-fill: #3d3025;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+.chart-legend-item-symbol {
+    -fx-background-radius: 50%;
+    -fx-padding: 6;
+}
+
+.chart-pie :hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 2);
+    -fx-scale-y: 1.03;
+    -fx-scale-x: 1.02;
+    -fx-cursor: hand;
+}
+
+
+/************** BAR CHART **************/
+.chart-bar {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+/* الأعمدة المتدرجة */
+.default-color3.chart-bar {
+    -fx-bar-fill: linear-gradient(to top, #a07255, #c9966a);
+}
+.default-color4.chart-bar {
+    -fx-bar-fill: linear-gradient(to top, #b8b2a6, #d0cac0);
+}
+.default-color5.chart-bar {
+    -fx-bar-fill: linear-gradient(to top, #e8ca6d, #f0db80);
+}
+
+/* الخلفية وراء الأعمدة */
+.chart-plot-background {
+    -fx-background-color: rgba(255,255,255,0.7);
+    -fx-background-radius: 10;
+}
+
+/* خطوط الشبكة */
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(0,0,0,0.07);
+}
+
+/* المحاور */
+.axis {
+    -fx-tick-label-fill: #4b3b2c;
+    -fx-font-size: 12px;
+}
+.axis-label {
+    -fx-text-fill: #3a2f25;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* تظليل بسيط للأعمدة عند تمرير الماوس */
+.chart-bar :hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 2);
+    -fx-scale-y: 1.03;
+    -fx-scale-x: 1.02;
+    -fx-cursor: hand;
+}
+
+/* ----------- TableView ----------- */
+.table-view {
+    -fx-background-color: rgba(255,255,255,0.6);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header {
+    -fx-background-color: #c8ac90;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-border-color: transparent transparent #d0c2b1 transparent;
+}
+
+.table-row-cell {
+    -fx-border-color: transparent transparent #f1e6db transparent;
+    -fx-font-size: 13px;
+}
+
+/* لون الصفوف بالتناوب */
+.table-row-cell:odd {
+    -fx-background-color: rgba(0,0,0,0.02);
+}
+.table-row-cell:even {
+    -fx-background-color: rgba(255,255,255,0.3);
+}
+
+/* عند تمرير الماوس على صف */
+.table-row-cell:hover {
+    -fx-background-color: #efe4d7;
+}
+
+/* Scrollbar ناعم */
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.882);
+    -fx-background-radius: 5;
+}
