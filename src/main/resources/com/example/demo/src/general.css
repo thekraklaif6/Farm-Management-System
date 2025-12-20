@@ -1,0 +1,231 @@
+/********************
+  GLOBAL COLORS
+********************/
+
+:root {
+    /* Primary Theme */
+    -fx-primary: #1f6c3b;
+    -fx-primary-light: #e6f2ea;
+
+    /* Neutral Colors */
+    -fx-text-dark: #2e2e2e;
+    -fx-text-medium: #555555;
+    -fx-text-light: #878787;
+
+    /* Backgrounds */
+    -fx-bg: #f7f7f7;
+    -fx-white: #ffffff;
+
+    /* Accents */
+    -fx-success: #2e7d32;
+    -fx-warning: #ff9800;
+    -fx-danger: #e53935;
+    -fx-info: #0277bd;
+}
+
+
+/********************
+  ROOT
+********************/
+
+.root {
+    -fx-background-color: -fx-bg;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+
+/********************
+  HEADINGS
+********************/
+
+.title-xl {
+    -fx-font-size: 32px;
+    -fx-text-fill: -fx-text-dark;
+    -fx-font-weight: 700;
+}
+
+.title-lg {
+    -fx-font-size: 22px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-dark;
+}
+
+.title-md {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-dark;
+}
+
+.title-sm {
+    -fx-font-size: 15px;
+    -fx-font-weight: 500;
+    -fx-text-fill: -fx-text-medium;
+}
+
+
+/********************
+  PARAGRAPH / TEXT
+********************/
+
+.text-normal {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-medium;
+}
+
+.text-small {
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-text-light;
+}
+
+
+/********************
+  CARD CONTAINERS
+********************/
+
+.card {
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-padding: 18px 20px;
+    -fx-spacing: 10px;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);
+}
+
+.card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.11), 14, 0, 0, 4);
+}
+
+
+/********************
+  BUTTONS
+********************/
+
+.btn {
+    -fx-background-radius: 14px;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+
+    -fx-padding: 8px 18px;
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.09), 8, 0, 0, 3);
+}
+
+.btn:hover {
+    -fx-background-color: #19592f;
+}
+
+.btn-small {
+    -fx-font-size: 11px;
+    -fx-padding: 4px 12px;
+}
+
+
+/********************
+  INPUTS
+********************/
+
+.text-field,
+.combo-box {
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+
+    -fx-padding: 8 10;
+
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-dark;
+
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 6, 0, 0, 2);
+}
+
+.text-field:focused,
+.combo-box:focused {
+    -fx-border-color: -fx-primary;
+    -fx-background-color: -fx-white;
+}
+
+
+/********************
+  SCROLLBARS
+********************/
+
+.scroll-bar:vertical {
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 8px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #cfcfcf;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .track {
+    -fx-background-color: rgba(0,0,0,0.05);
+    -fx-background-radius: 5px;
+}
+
+
+/********************
+  LAYOUT
+********************/
+
+.container {
+    -fx-spacing: 15px;
+    -fx-padding: 10px;
+}
+
+.grid {
+    -fx-hgap: 22px;
+    -fx-vgap: 22px;
+}
+
+.flex-row {
+    -fx-spacing: 16px;
+}
+
+.flex-col {
+    -fx-spacing: 12px;
+}
+
+
+/********************
+  STATUS TAGS
+********************/
+
+.tag-success {
+    -fx-background-color: -fx-success;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 3 8;
+    -fx-background-radius: 10px;
+}
+
+.tag-warning {
+    -fx-background-color: -fx-warning;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 3 8;
+    -fx-background-radius: 10px;
+}
+
+.tag-danger {
+    -fx-background-color: -fx-danger;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 3 8;
+    -fx-background-radius: 10px;
+}

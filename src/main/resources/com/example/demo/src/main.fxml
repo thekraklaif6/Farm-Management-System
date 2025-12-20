@@ -1,151 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25">
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" stylesheets="@general.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
     <children>
-        <Pane id="topBar" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
-            <children>
-                <Label id="#hoverLabel1" layoutX="60.0" layoutY="39.0" stylesheets="@style.css" text="Barns">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-                <Label id="#hoverLabel2" layoutX="330.0" layoutY="39.0" stylesheets="@style.css" text="Nutrition">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-                <Label id="#hoverLabel3" layoutX="485.0" layoutY="41.0" stylesheets="@style.css" text="Production">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-                <Label id="#hoverLabel4" layoutX="653.0" layoutY="39.0" stylesheets="@style.css" text="Treatment">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-                <Label id="#hoverLabel5" layoutX="817.0" layoutY="40.0" stylesheets="@style.css" text="Costs">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-                <Label id="#hoverLabel6" layoutX="944.0" layoutY="41.0" stylesheets="@style.css" text="Employees">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Label>
-            <ImageView fitHeight="50.0" fitWidth="40.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Downloads/barn.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="189.0" layoutY="41.0" text="Animals">
+      <Pane layoutX="1.0" layoutY="-7.0" prefHeight="170.0" prefWidth="1207.0" styleClass="dashboard" stylesheets="@../style2.css">
+         <children>
+            <Button fx:id="BarnPage" layoutX="80.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Barns" style="-fx-background-color: #d2b48c;" text="Barns">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
-            </Label>
-            <ImageView fitHeight="88.0" fitWidth="40.0" layoutX="143.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Downloads/cattle.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="295.0" layoutY="36.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../Downloads/wheat.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="40.0" layoutX="452.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Downloads/box.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="40.0" layoutX="626.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Downloads/syringe.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="40.0" fitWidth="27.0" layoutX="790.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Downloads/money-bag.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="853.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="1103.0" layoutY="42.0" text="Home">
+            </Button>
+            <Button layoutX="215.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Animals" style="-fx-background-color: #d2b48c;" text="Animals">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
-            </Label>
-            <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="909.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            </Button>
+            <Button layoutX="363.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Nutrition" style="-fx-background-color: #d2b48c;" text="Nutrition">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="518.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Production" style="-fx-background-color: #d2b48c;" text="Production ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="665.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Treatment" style="-fx-background-color: #d2b48c;" text="Treatment">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="842.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Costs" style="-fx-background-color: #d2b48c;" text="Costs">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" layoutX="965.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Employees" style="-fx-background-color: #d2b48c; -fx-text-fill: black; -fx-border-width: 0;" text="Employees">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="1106.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#Home" style="-fx-background-color: #d2b48c;" text="Home">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="632.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="27.0" fitWidth="40.0" layoutX="1069.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="930.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/home.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
-            </children>
-        </Pane>
-        <Label layoutX="145.0" layoutY="163.0" text="Welcome">
-            <font>
-        <Font name="Goudy Old Style Bold" size="64.0" />
-            </font>
-        </Label>
-        <Label layoutX="198.0" layoutY="230.0" text="TO OUR FARM">
-            <font>
-                <Font name="System Bold" size="18.0" />
-            </font>
-        </Label>
-        <Pane id="card1" layoutX="45.0" layoutY="327.0" prefHeight="110.0" prefWidth="200.0" stylesheets="@style.css">
-            <children>
-                <Label layoutX="14.0" layoutY="14.0" text="Total Number of Animals">
-                    <font>
-                        <Font name="System Bold" size="12.0" />
-                    </font>
-                </Label>
-                <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="15.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Downloads/clipboard.png" />
-                    </image>
-                </ImageView>
-            </children>
-        </Pane>
-        <Pane id="card2" layoutX="300.0" layoutY="327.0" prefHeight="110.0" prefWidth="200.0" stylesheets="@style.css">
-            <children>
-                <Label layoutX="14.0" layoutY="14.0" text="Daily Production Quantity">
-                    <font>
-                        <Font name="System Bold" size="12.0" />
-                    </font>
-                </Label>
-                <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Downloads/boxes.png" />
-                    </image>
-                </ImageView>
-            </children>
-        </Pane>
-        <Pane id="card3" layoutX="45.0" layoutY="505.0" prefHeight="110.0" prefWidth="200.0" stylesheets="@style.css">
-            <children>
-                <Label layoutX="14.0" layoutY="14.0" text="Net Profit">
-                    <font>
-                        <Font name="System Bold" size="12.0" />
-                    </font>
-                </Label>
-                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Downloads/profit.png" />
-                    </image>
-                </ImageView>
-            </children>
-        </Pane>
-        <Pane id="card4" layoutX="300.0" layoutY="505.0" prefHeight="110.0" prefWidth="200.0" stylesheets="@style.css" />
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="810.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/money-bag.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="1064.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="484.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="329.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/wheat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="181.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/cattle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="39.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/barn.png" />
+               </image>
+            </ImageView>
+            <StackPane layoutX="93.0" layoutY="53.0" prefHeight="66.0" prefWidth="178.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+              <Label layoutX="165.0" layoutY="95.0" prefHeight="94.0" prefWidth="287.0" text="Welcome">
+                  <font>
+              <Font name="Goudy Old Style Bold" size="64.0" />
+                  </font>
+              </Label>
+              <Label layoutX="225.0" layoutY="170.0" text="TO OUR FARM">
+                  <font>
+                      <Font name="System Bold" size="18.0" />
+                  </font>
+              </Label>
+         </children>
+      </Pane>
+      <HBox layoutX="95.0" layoutY="410.0" prefHeight="299.0" prefWidth="1098.0" styleClass="container">
+         <children>
+            <VBox prefHeight="270.0" prefWidth="341.0" styleClass="section" stylesheets="@pieChart.css">
+               <children>
+                  <Label styleClass="section-title" text="Animal Distribution" />
+                  <Label styleClass="section-subtitle" text="Current livestock count by type" />
+                  <PieChart fx:id="animalDistributionChart" prefHeight="170.0" prefWidth="300.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="290.0" prefWidth="342.0" styleClass="section" stylesheets="@pieChart.css">
+               <children>
+                  <Label styleClass="section-title" text="Production Trend" />
+                  <Label styleClass="section-subtitle" text="Monthly production vs target" />
+                  <LineChart fx:id="productionTrendChart" prefHeight="220.0" prefWidth="374.0" styleClass="chart-series-line" stylesheets="@pieChart.css">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" styleClass="chart-horizontal-grid-lines" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" styleClass="chart-vertical-grid-lines" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </VBox>
+            <VBox prefHeight="241.0" prefWidth="308.0" styleClass="section" stylesheets="@state.css">
+               <children>
+                  <Label styleClass="title-lg" text="Quick Stats" />
+                  <Label styleClass="title-md" text="Key performance indicators" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="stat-item">
+                     <children>
+                        <Label styleClass="stat-name" text="Feed Efficiency" />
+                        <Label fx:id="feedEfficiencyLabel" styleClass="stat-value" text="94%" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="stat-item">
+                     <children>
+                        <Label fx:id="reproductionRateLabel" styleClass="stat-name" text="Reproduction Rate" />
+                        <Label fx:id="reproductionRateLabel" styleClass="stat-value" text="92%" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="stat-item">
+                     <children>
+                        <Label styleClass="stat-name" text="Sales Revenue" />
+                        <Label fx:id="salesRevenueLabel" text="1500$">
+                           <styleClass>
+                              <String fx:value="stat-value" />
+                              <String fx:value="neutral" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="140.0" layoutY="191.0" prefHeight="170.0" prefWidth="1008.0" stylesheets="@cards1.css">
+         <children>
+            <AnchorPane prefHeight="142.0" prefWidth="263.0" styleClass="card">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" styleClass="card-icon" />
+                  <Label layoutX="63.0" layoutY="18.0" styleClass="card-title" text="Total Animals" />
+                  <Label fx:id="totalAnimalsLabel" layoutX="37.0" layoutY="72.0" styleClass="card-value" text="183" />
+                  <Label layoutX="33.0" layoutY="122.0" styleClass="card-sub" text="+5 this month" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="149.0" prefWidth="253.0" styleClass="card">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="12.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="card-icon" />
+                  <Label layoutX="53.0" layoutY="22.0" styleClass="card-title" text="Daily Production" />
+                  <Label fx:id="dailyProductionLabel" layoutX="26.0" layoutY="73.0" styleClass="card-value" text="2,500 L" />
+                  <Label layoutX="28.0" layoutY="110.0" styleClass="card-sub" text="+8% from target" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="142.0" prefWidth="281.0" styleClass="card">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" styleClass="card-icon" />
+                  <Label layoutX="60.0" layoutY="18.0" styleClass="card-title" text="Health Status" />
+                  <Label fx:id="healthStatusLabel" layoutX="26.0" layoutY="65.0" styleClass="card-value" text="91%" />
+                  <Label layoutX="22.0" layoutY="114.0" styleClass="card-sub" text="All animals healthy" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="142.0" prefWidth="245.0" styleClass="card">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" styleClass="card-icon" />
+                  <Label layoutX="65.0" layoutY="24.0" styleClass="card-title" text="Staff Present" />
+                  <Label fx:id="staffPresentLabel" layoutX="37.0" layoutY="72.0" styleClass="card-value" text="12/14" />
+                  <Label layoutX="32.0" layoutY="119.0" styleClass="card-sub" text="2 on leave" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="142.0" prefWidth="245.0" styleClass="card">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" styleClass="card-icon" />
+                  <Label layoutX="65.0" layoutY="24.0" styleClass="card-title" text="Animals Sold" />
+                  <Label fx:id="animalsSoldLabel" layoutX="37.0" layoutY="72.0" styleClass="card-value" text="5" />
+                  <Label layoutX="83.0" layoutY="72.0" styleClass="card-value" text="Head" />
+               </children>
+            </AnchorPane>
+         </children>
+         <styleClass>
+            <String fx:value="cards-container" />
+            <String fx:value="container" />
+         </styleClass>
+      </HBox>
     </children>
 </AnchorPane>

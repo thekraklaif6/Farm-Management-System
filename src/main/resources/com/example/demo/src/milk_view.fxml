@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="contentArea" prefHeight="373.0" prefWidth="875.0" styleClass="card" stylesheets="@cards.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MilkController">
+   <children>
+      <Text layoutX="244.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="MILK PRODUCT OVERVIEW" wrappingWidth="259.99999999999994" />
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="198.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/milk.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="milkPieChart" layoutX="184.0" layoutY="42.0" prefHeight="150.0" prefWidth="179.0" styleClass="chart-pie" stylesheets="@cards.css" />
+      <BarChart fx:id="milkBarChart" layoutX="504.0" layoutY="42.0" prefHeight="150.0" prefWidth="343.0" styleClass="chart-bar" stylesheets="@cards.css">
+         <xAxis>
+            <CategoryAxis prefHeight="4.0" prefWidth="253.0" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <TableView fx:id="milkTable" layoutX="258.0" layoutY="197.0" prefHeight="122.0" prefWidth="563.0" stylesheets="@cards.css">
+         <columns>
+            <TableColumn fx:id="priceCol" prefWidth="81.60003662109375" text="      Price" />
+            <TableColumn fx:id="quantityCol" prefWidth="118.39996337890625" text="     Quantity" />
+            <TableColumn fx:id="dateCol" prefWidth="116.80001831054688" text="       Date" />
+            <TableColumn fx:id="animalCol" minWidth="0.0" prefWidth="82.39996337890625" text="        Animal" />
+            <TableColumn fx:id="idCol" prefWidth="66.39996337890625" text="        ID" />
+            <TableColumn fx:id="actionsCol" prefWidth="95.199951171875" text="Actions" />
+         </columns>
+      </TableView>
+      <Label layoutX="599.0" layoutY="12.0" prefHeight="32.0" prefWidth="250.0" styleClass="card-title" text="Daily Milk Production (LITERS)">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#996914" layoutX="85.0" layoutY="90.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ccbf9d" layoutX="85.0" layoutY="117.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#fcd970" layoutX="85.0" layoutY="143.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="107.0" layoutY="81.0" text="Cow's Milk" />
+      <Label layoutX="107.0" layoutY="108.0" text="Goat's Milk" />
+      <Label layoutX="107.0" layoutY="134.0" text="Sheep's  Milk" />
+      <TextField fx:id="searchField" layoutX="78.0" layoutY="258.0" prefHeight="16.0" prefWidth="158.0" promptText="Search ...." style="-fx-border-color: #d2b48c; -fx-border-width: 5; -fx-background-radius: 15; -fx-border-radius: 15;" />
+      <ComboBox fx:id="searchByComboBox" layoutX="82.0" layoutY="217.0" prefWidth="150.0" promptText="Searched By" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-text-fill: #000000;" />
+      <Label fx:id="totalRevenueLabel" layoutX="85.0" layoutY="307.0" prefHeight="32.0" prefWidth="143.0" />
+      <Circle fill="#ff3212" layoutX="403.0" layoutY="89.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff7a06" layoutX="403.0" layoutY="117.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="430.0" layoutY="81.0" prefHeight="14.0" prefWidth="59.0" text="Quantity" />
+      <Label layoutX="430.0" layoutY="108.0" text="Price" />
+   </children>
+</AnchorPane>

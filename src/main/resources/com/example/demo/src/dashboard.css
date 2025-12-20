@@ -1,0 +1,89 @@
+/* dashboard.css */
+
+/* الخلفية العامة */
+.root {
+    -fx-background-color: #f8fafc;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* بطاقات المعلومات (cards) */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 10, 0, 0, 4);
+}
+
+/* عناوين البطاقات */
+.card-title {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 14px;
+}
+
+/* القيم الرقمية داخل البطاقات */
+.card-value {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* النسبة المئوية (مثلاً +12%) */
+.card-percent-up {
+    -fx-text-fill: #16a34a;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.card-percent-down {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* الـ Chart (sales statistics) */
+.chart {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 10, 0, 0, 4);
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-series-line {
+    -fx-stroke: #22c55e;
+    -fx-stroke-width: 2px;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: #334155;
+}
+
+/* Pie Chart (البيانات النسبية) */
+.chart-pie {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 10, 0, 0, 4);
+}
+
+.chart-pie-label {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 13px;
+}
+
+/* النسبة المئوية الكبيرة داخل الدائرة */
+.main-percent {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* ألوان المخطط الدائري */
+.default-color0.chart-pie { -fx-pie-color: #3b82f6; }  /* Social media */
+.default-color1.chart-pie { -fx-pie-color: #10b981; }  /* Purchased */
+.default-color2.chart-pie { -fx-pie-color: #f59e0b; }  /* Affiliate */
+.default-color3.chart-pie { -fx-pie-color: #8b5cf6; }  /* Advertisement */

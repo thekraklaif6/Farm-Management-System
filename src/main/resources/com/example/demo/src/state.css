@@ -1,0 +1,52 @@
+/* Section */
+.section {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-padding: 18px 20px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);
+}
+
+/* Stat item row */
+.stat-item {
+    -fx-background-color: #e6d2c1;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    -fx-padding: 12px 16px;
+    -fx-spacing: 10px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Name */
+.stat-name {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4a4a4a;
+    -fx-font-weight: 600;
+}
+
+/* Value */
+.stat-value {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #254f28;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+/* Positive stat (like +12%) */
+.positive {
+    -fx-background-color: #e3c3a8;
+}
+
+.positive .stat-value {
+    -fx-text-fill: #c15a00;
+}
+
+/* Neutral stat (mortality) */
+.neutral {
+    -fx-background-color: #e8dccb;
+}
+
+.neutral .stat-value {
+    -fx-text-fill: #8c8c8c;
+}

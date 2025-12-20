@@ -1,0 +1,46 @@
+/* Container of cards */
+.cards-container {
+    -fx-spacing: 15px;
+    -fx-padding: 15px 0;
+}
+
+/* Card */
+.card {
+    -fx-background-color: #fdfdfb;
+    -fx-border-radius: 14px;
+    -fx-background-radius: 14px;
+    -fx-padding: 10px 12px;
+    -fx-pref-width: 180;
+    -fx-pref-height: 70;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 12, 0, 0, 4);
+}
+
+/* Title */
+.card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #525252;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Value */
+.card-value {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1c3f1d;
+    -fx-padding: 0 0 6 0;
+}
+
+/* Sub text */
+.card-sub {
+    -fx-font-size: 13px;
+    -fx-text-fill: #7a7a7a;
+}
+
+/* Icon */
+.card-icon {
+    -fx-fit-width: 28;
+    -fx-fit-height: 28;
+    -fx-opacity: 0.8;
+    -fx-translate-y: -5px;
+}

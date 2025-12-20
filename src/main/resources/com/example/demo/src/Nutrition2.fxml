@@ -41,22 +41,22 @@
             <RadioButton id="mixedfeedb" layoutX="482.0" layoutY="178.0" mnemonicParsing="false" text="Mixed Feed" />
             <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="188.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/bag.png" />
+
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="306.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/grass.png" />
+
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="424.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/corn.png" />
+
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="594.0" layoutY="178.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../Downloads/sack.png" />
+
                </image>
             </ImageView>
             <Label layoutX="21.0" layoutY="245.0" text="Quantity (kg) :">

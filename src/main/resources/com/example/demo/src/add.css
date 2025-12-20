@@ -1,0 +1,158 @@
+/*
+ * Modern and Clean CSS for JavaFX Animal Form
+ */
+
+/* ======== Root Styles ======== */
+.root {
+    -fx-background-color: #f4f4f4; /* Light gray background for the whole scene */
+    -fx-font-family: "Arial"; /* A clean, readable font */
+}
+
+/* ======== Main Container ======== */
+.main-container {
+    -fx-background-color: #ffffff; /* White background for the form area */
+    -fx-border-color: #d2b48c; /* Tan border color */
+    -fx-border-width: 5px;
+    -fx-border-radius: 15px; /* Rounded corners for the container */
+    -fx-background-radius: 15px; /* Match background radius with border radius */
+    -fx-padding: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5); /* Subtle shadow for depth */
+}
+
+/* ======== Labels ======== */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark gray text color for better readability */
+}
+
+/* ======== Form Title ======== */
+#form-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 0 0 20px 0; /* Padding below the title */
+}
+
+/* ======== Text Fields ========*/
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d2b48c;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px; 
+    -fx-background-radius: 15px;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 14px;
+}
+ 
+.text-field:focused {
+    -fx-border-color: #a0522d; /* Darker tan on focus */
+    -fx-border-width: 4px;
+}
+
+/* ======== Spinners (for Age, Weight, etc.) ======== */
+.spinner ,.date-picker {
+    -fx-background-color: #ffffff;              /* خلفية */
+    -fx-border-color: #d4c0a5;                  /* لون الحواف */
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 0;
+    
+}
+
+/* المنطقة التي تحتوي السهمين */
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #c9ac84;              /* لون أزرار الزيادة والنقصان */
+    -fx-border-color: transparent;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #c7a97e;
+}
+
+/* الأسهم نفسها */
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: #ffffff;              /* لون السهم */
+}
+
+/* حقل النص داخل السبينر */
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6a5b4a;
+    -fx-background-radius: 30px 0 0 30px;
+    fx-hight:15;
+    
+}
+
+/* ======== Radio Buttons ======== */
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-border-color: #d2b48c;
+    -fx-background-color: white;
+    -fx-border-radius: 50%;
+    -fx-padding: 4px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #a0522d; /* Darker tan for the selected dot */
+}
+
+/* ======== Date Picker ======== */
+.date-picker .text-field {
+     -fx-border-width: 2px;
+    -fx-border-radius: 15px 0 0 15px;
+    -fx-background-radius: 15px 0 0 15px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #d2b48c;
+    -fx-border-color: #d2b48c;
+    -fx-border-width: 5px;
+    -fx-border-radius: 0 5px 5px 0;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+/* ======== Text Area ======== */
+/* تصميم الـ TextArea */
+.custom-textarea {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4c0a5;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-padding: 10;
+    -fx-border-width:3px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #6a5b4a;
+}
+
+/* منطقة الكتابة داخل الـ TextArea */
+.custom-textarea .content {
+    -fx-background-color: #ffffff;
+    
+}
+
+/* ======== Add Button ======== */
+#add-button {
+    -fx-background-color: #d2b48c; /* Tan background */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 30px;
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+#add-button:hover {
+    -fx-background-color: #a0522d; /* Darker tan on hover */
+}
