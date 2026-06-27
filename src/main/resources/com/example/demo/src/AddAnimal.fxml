@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" styleClass="root" stylesheets="@add.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddAnimalController">
+<AnchorPane prefHeight="661.0" prefWidth="747.0" styleClass="root" stylesheets="@add.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddAnimalController">
    <children>
-      <Pane layoutX="283.0" layoutY="55.0" prefHeight="571.0" prefWidth="574.0" styleClass="main-container">
+      <Pane layoutX="100.0" layoutY="45.0" prefHeight="571.0" prefWidth="574.0" styleClass="main-container" stylesheets="@style.css">
          <children>
             <Label id="form-title" layoutX="163.0" layoutY="21.0" text="Add new Animal">
                <font>
@@ -67,7 +67,7 @@
                </font>
             </Label>
             <DatePicker fx:id="dateOfBirthPicker" layoutX="180.0" layoutY="443.0" />
-            <Button fx:id="addButton" layoutX="213.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleAddOrUpdateAnimal" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-font-size: 20;" text="+ Add " textFill="WHITE">
+            <Button fx:id="addButton" layoutX="307.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleAddOrUpdateAnimal" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-font-size: 20;" text="+ Add " textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -76,8 +76,13 @@
             <RadioButton fx:id="maleRadio" layoutX="151.0" layoutY="347.0" mnemonicParsing="false" text="Male" />
             <RadioButton fx:id="femaleRadio" layoutX="243.0" layoutY="347.0" mnemonicParsing="false" text="Famale" />
             <Spinner fx:id="purchasePriceSpinner" layoutX="181.0" layoutY="292.0" prefHeight="25.0" prefWidth="215.0" />
-            <ComboBox fx:id="barnComboBox" layoutX="186.0" layoutY="394.0" prefHeight="29.0" prefWidth="173.0" />
+            <ComboBox fx:id="barnComboBox" layoutX="186.0" layoutY="394.0" prefHeight="29.0" prefWidth="173.0" styleClass="comBox" />
             <RadioButton fx:id="goatRadio" layoutX="381.0" layoutY="110.0" mnemonicParsing="false" text="Goat" />
+            <Button layoutX="130.0" layoutY="507.0" mnemonicParsing="false" onAction="#backButton" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #d2b48c; -fx-background-radius: 15; -fx-font-size: 20;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

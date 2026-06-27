@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
@@ -14,265 +15,341 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TreatmentController">
    <children>
-      <Pane id="top3" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
+      <Pane id="top3" prefHeight="170.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="52.0" layoutY="29.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
-            <Label layoutX="90.0" layoutY="41.0" text="Barn">
+            <Label layoutX="90.0" layoutY="41.0" onMouseClicked="#Barns5" text="Barn">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="212.0" layoutY="41.0" text="Animals">
+            <Label layoutX="212.0" layoutY="41.0" onMouseClicked="#Animals5" text="Animals">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="181.0" layoutY="35.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
-            <Label layoutX="344.0" layoutY="41.0" text="Nutrition">
+            <Label layoutX="344.0" layoutY="41.0" onMouseClicked="#Nutrition5" text="Nutrition">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="324.0" layoutY="41.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
-            <Label layoutX="485.0" layoutY="41.0" text="Production">
+            <Label layoutX="485.0" layoutY="41.0" onMouseClicked="#Production5" text="Production">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="459.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
-            <Label layoutX="653.0" layoutY="41.0" text="Treatment">
+            <Label layoutX="653.0" layoutY="41.0" onMouseClicked="#Treatment5" text="Treatment">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="633.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
-            <Label layoutX="821.0" layoutY="41.0" text="Costs">
+            <Label layoutX="821.0" layoutY="41.0" onMouseClicked="#Costs5" text="Costs">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="801.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
-            <Label layoutX="955.0" layoutY="42.0" text="Employees">
+            <Label layoutX="955.0" layoutY="42.0" onMouseClicked="#Employees5" text="Employees">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="927.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
-            <Label layoutX="1116.0" layoutY="42.0" text="Home">
+            <Label layoutX="1116.0" layoutY="42.0" onMouseClicked="#Home5" text="Home">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="1089.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
-            <Label layoutX="146.0" layoutY="138.0" text="Animal Care Record">
+            <Label layoutX="146.0" layoutY="115.0" text="Animal Care Record">
                <font>
                   <Font name="Bell MT" size="40.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Label layoutX="82.0" layoutY="226.0" text="Select Animal :">
+      <Label layoutX="82.0" layoutY="199.0" text="Select Animal :">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ComboBox layoutX="239.0" layoutY="227.0" prefHeight="25.0" prefWidth="210.0" />
-      <Pane id="c1" layoutX="35.0" layoutY="274.0" prefHeight="170.0" prefWidth="220.0" stylesheets="@style.css">
+      <ComboBox fx:id="animalSelectCombo" layoutX="234.0" layoutY="200.0" onAction="#onAnimalSelected" prefHeight="25.0" prefWidth="210.0" />
+      <Pane id="c1" layoutX="35.0" layoutY="254.0" prefHeight="180.0" prefWidth="225.0" stylesheets="@style.css">
          <children>
-            <Label layoutX="13.0" layoutY="14.0" text="Examination Date :">
+            <Label fx:id="c1DoctorLabel" layoutX="14.0" layoutY="67.0" text="                       ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="68.0" text="Doctor :">
+            <Label fx:id="c1MedLabel" layoutX="12.0" layoutY="39.0" text="                        ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="42.0" text="Medication Name :">
+            <Label fx:id="c1DurationLabel" layoutX="14.0" layoutY="115.0" text="                     ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="94.0" text="Treatment Duration :">
+            <Label fx:id="c1DosageLabel" layoutX="12.0" layoutY="90.0" text="                    ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="119.0" text="Treatment End Date :">
+            <Label fx:id="c1DateLabel" layoutX="12.0" layoutY="22.0" text="                        ">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="95.0" layoutY="136.0" pickOnBounds="true">
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="144.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/treatment.png" />
+                  <Image url="@../../../../images/treatment.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane id="c3" layoutX="35.0" layoutY="474.0" prefHeight="170.0" prefWidth="220.0" stylesheets="@style.css">
+      <Pane id="c3" layoutX="35.0" layoutY="464.0" prefHeight="180.0" prefWidth="225.0" stylesheets="@style.css">
          <children>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="96.0" layoutY="135.0" pickOnBounds="true">
+            <Label fx:id="c3DateLabel" layoutX="16.0" layoutY="26.0" text="                                          ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3MedLabel" layoutX="16.0" layoutY="34.0" text="                                  ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3DoctorLabel" layoutX="16.0" layoutY="61.0" text="                              ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3DosageLabel" layoutX="17.0" layoutY="90.0" text="                                ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3DurationLabel" layoutX="17.0" layoutY="115.0" text="                           ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="103.0" layoutY="141.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/treatment.png" />
+                  <Image url="@../../../../images/treatment.png" />
                </image>
             </ImageView>
          </children></Pane>
-      <Pane id="c4" layoutX="302.0" layoutY="474.0" prefHeight="170.0" prefWidth="220.0" stylesheets="@style.css">
+      <Pane id="c4" layoutX="302.0" layoutY="464.0" prefHeight="180.0" prefWidth="225.0" stylesheets="@style.css">
          <children>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="137.0" pickOnBounds="true">
+            <Label fx:id="c4DateLabel" layoutX="13.0" layoutY="20.0" text="                         ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4MedLabel" layoutX="13.0" layoutY="37.0" text="                             ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4DoctorLabel" layoutX="15.0" layoutY="63.0" text="                                   ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4DosageLabel" layoutX="10.0" layoutY="90.0" text="                               ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4DurationLabel" layoutX="16.0" layoutY="117.0" prefHeight="17.0" prefWidth="125.0" text="     ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="100.0" layoutY="141.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/treatment.png" />
+                  <Image url="@../../../../images/treatment.png" />
                </image>
             </ImageView>
          </children></Pane>
-      <Pane id="background1" layoutX="613.0" layoutY="216.0" prefHeight="427.0" prefWidth="494.0" stylesheets="@style.css">
+      <Pane id="background1" layoutX="617.0" layoutY="170.0" prefHeight="478.0" prefWidth="478.0" stylesheets="@style.css">
          <effect>
             <Blend mode="SOFT_LIGHT" />
          </effect>
          <children>
-            <Label layoutX="141.0" layoutY="26.0" text="Add New Treatment">
+            <Label layoutX="138.0" layoutY="21.0" text="Add New Treatment">
                <font>
                   <Font name="Bell MT" size="29.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="97.0" text="Add Animal :">
+            <Label layoutX="13.0" layoutY="75.0" text="Add Animal :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="137.0" text="Examination Date :">
+            <Label layoutX="14.0" layoutY="115.0" text="Examination Date :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="176.0" text="Doctor :">
+            <Label layoutX="14.0" layoutY="152.0" text="Doctor :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="220.0" text="Medication Name :">
+            <Label layoutX="14.0" layoutY="198.0" text="Medication Name :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="add1" layoutX="214.0" layoutY="378.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="100.0" text="Add" textFill="#f6f1f1">
+            <Button id="add1" layoutX="204.0" layoutY="427.0" mnemonicParsing="false" onAction="#onAddTreatment" prefHeight="10.0" prefWidth="100.0" text="Add" textFill="#f6f1f1">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <DatePicker layoutX="177.0" layoutY="135.0" />
-            <TextField layoutX="116.0" layoutY="95.0" prefHeight="25.0" prefWidth="210.0" />
-            <TextField layoutX="116.0" layoutY="174.0" prefHeight="25.0" prefWidth="175.0" />
-            <TextField layoutX="177.0" layoutY="218.0" prefHeight="25.0" prefWidth="175.0" />
-            <Label layoutX="14.0" layoutY="265.0" text="Treatment Duration :">
+            <DatePicker fx:id="examDatePicker" layoutX="179.0" layoutY="109.0" prefWidth="183.0" />
+            <Label layoutX="11.0" layoutY="374.0" text=" Duration :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Spinner layoutX="158.0" layoutY="263.0" />
+            <Spinner fx:id="durationField" layoutX="123.0" layoutY="372.0" prefHeight="25.0" prefWidth="136.0" style="-fx-border-radius: 5;" />
             <Group layoutX="154.0" layoutY="309.0" />
-            <Label layoutX="13.0" layoutY="312.0" text="Treatment End Date :">
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="71.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/doctor (1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="146.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="141.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/syringe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="92.0" fitWidth="92.0" layoutX="370.0" layoutY="189.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../images/medical-records.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="18.0" layoutY="327.0" text="Dosage :">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <DatePicker layoutX="193.0" layoutY="310.0" />
-            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="76.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+            <Spinner fx:id="dosageField" layoutX="85.0" layoutY="323.0" prefHeight="25.0" prefWidth="107.0" style="-fx-border-radius: 5;" />
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="86.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/doctor%20(1).png" />
+                  <Image url="@../../../../images/hourglass.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="146.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/calendar.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="159.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/schedule.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="146.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/syringe%20(1).png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="394.0" layoutY="183.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/medical-records.png" />
-               </image>
-            </ImageView>
+            <Label layoutX="17.0" layoutY="278.0" text="Form : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="typeField" layoutX="67.0" layoutY="230.0" prefHeight="25.0" prefWidth="159.0" />
+            <Label layoutX="17.0" layoutY="236.0" text="Type :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="formField" layoutX="67.0" layoutY="272.0" prefHeight="25.0" prefWidth="159.0" />
+            <Button id="add1" layoutX="253.0" layoutY="322.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="35.0" text="ml" textFill="#f6f1f1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="add1" layoutX="209.0" layoutY="322.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="g" textFill="#f6f1f1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="doctorCombo" layoutX="112.0" layoutY="150.0" prefHeight="25.0" prefWidth="159.0" style="-fx-border-color: #d2b48c; -fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" />
+            <ComboBox fx:id="addAnimalCombo" layoutX="112.0" layoutY="71.0" prefHeight="25.0" prefWidth="159.0" style="-fx-border-color: #d2b48c; -fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" />
+            <ComboBox fx:id="medicationcombo" layoutX="178.0" layoutY="196.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: #d2b48c; -fx-background-color: 20; -fx-border-radius: 20;" styleClass="comBox" />
          </children>
       </Pane>
-      <Pane id="c2" layoutX="302.0" layoutY="274.0" prefHeight="170.0" prefWidth="220.0" stylesheets="@style.css">
+      <Pane id="c2" layoutX="302.0" layoutY="254.0" prefHeight="180.0" prefWidth="225.0" stylesheets="@style.css">
          <children>
-            <Label layoutX="13.0" layoutY="14.0" text="Examination Date :">
+            <Label fx:id="c2DateLabel" layoutX="11.0" layoutY="25.0" text="                    ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="c2DoctorLabel" layoutX="14.0" layoutY="68.0" text="                 ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="68.0" text="Doctor :">
+            <Label fx:id="c2MedLabel" layoutX="13.0" layoutY="42.0" text="                   ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="42.0" text="Medication Name :">
+            <Label fx:id="c2DurationLabel" layoutX="8.0" layoutY="124.0" text="             ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="97.0" text="Treatment Duration :">
+            <Label fx:id="c2DosageLabel" layoutX="14.0" layoutY="97.0" text="           ">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="120.0" text="Treatment End Date :">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="137.0" pickOnBounds="true">
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="101.0" layoutY="145.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/treatment.png" />
+                  <Image url="@../../../../images/treatment.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
    </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@style.css" />
+   </stylesheets>
 </AnchorPane>

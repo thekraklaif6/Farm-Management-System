@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.image.Image?>
@@ -8,88 +9,88 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CostsController">
    <children>
       <Pane id="top3" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="52.0" layoutY="29.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
-            <Label layoutX="90.0" layoutY="41.0" text="Barn">
+            <Label layoutX="90.0" layoutY="41.0" onMouseClicked="#Barns5" text="Barn">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="212.0" layoutY="41.0" text="Animals">
+            <Label layoutX="212.0" layoutY="41.0" onMouseClicked="#Animals5" text="Animals">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="181.0" layoutY="35.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
-            <Label layoutX="344.0" layoutY="41.0" text="Nutrition">
+            <Label layoutX="344.0" layoutY="41.0" onMouseClicked="#Nutrition5" text="Nutrition">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="324.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
-            <Label layoutX="485.0" layoutY="41.0" text="Production">
+            <Label layoutX="485.0" layoutY="41.0" onMouseClicked="#Production5" text="Production">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="455.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="455.0" layoutY="41.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
-            <Label layoutX="653.0" layoutY="41.0" text="Treatment">
+            <Label layoutX="653.0" layoutY="41.0" onMouseClicked="#Treatment5" text="Treatment">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="633.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
-            <Label layoutX="821.0" layoutY="41.0" text="Costs">
+            <Label layoutX="821.0" layoutY="41.0" onMouseClicked="#Costs5" text="Costs">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="794.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
-            <Label layoutX="955.0" layoutY="42.0" text="Employees">
+            <Label layoutX="955.0" layoutY="42.0" onMouseClicked="#Employees5" text="Employees">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="927.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
-            <Label layoutX="1116.0" layoutY="42.0" text="Home">
+            <Label layoutX="1116.0" layoutY="42.0" onMouseClicked="#Home5" text="Home">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="32.0" fitWidth="20.0" layoutX="1089.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
             <Label layoutX="168.0" layoutY="142.0" text="Financial Overview">
@@ -103,7 +104,7 @@
          <children>
             <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/coin.png" />
+                  <Image url="@../../../../images/coin.png" />
                </image>
             </ImageView>
             <Label layoutX="54.0" layoutY="12.0" text="Net Profit :">
@@ -111,23 +112,18 @@
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="46.0" layoutY="57.0" prefHeight="28.0" prefWidth="53.0" text="4,450">
+            <Label fx:id="netProfitLabel" layoutX="57.0" layoutY="52.0" prefHeight="28.0" prefWidth="53.0" text="4,450">
                <font>
-                  <Font name="High Tower Text" size="24.0" />
+                  <Font name="High Tower Text Italic" size="24.0" />
                </font>
             </Label>
-            <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="107.0" layoutY="60.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/shekel.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane id="P1" layoutX="62.0" layoutY="350.0" prefHeight="113.0" prefWidth="170.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/coin.png" />
+                  <Image url="@../../../../images/coin.png" />
                </image>
             </ImageView>
             <Label layoutX="54.0" layoutY="12.0" text="Total Costs:">
@@ -135,23 +131,18 @@
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="48.0" layoutY="57.0" prefHeight="17.0" prefWidth="98.0" text="4,450">
+            <Label fx:id="totalCostsLabel" layoutX="46.0" layoutY="57.0" prefHeight="17.0" prefWidth="98.0" text="4,450">
                <font>
                   <Font name="High Tower Text" size="24.0" />
                </font>
             </Label>
-            <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="107.0" layoutY="57.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/shekel.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane id="P1" layoutX="62.0" layoutY="507.0" prefHeight="113.0" prefWidth="170.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/coin.png" />
+                  <Image url="@../../../../images/coin.png" />
                </image>
             </ImageView>
             <Label layoutX="54.0" layoutY="12.0" text="Total Income:">
@@ -159,116 +150,76 @@
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="48.0" layoutY="57.0" prefHeight="17.0" prefWidth="98.0" text="4,450">
+            <Label fx:id="totalIncomeLabel" layoutX="48.0" layoutY="57.0" prefHeight="17.0" prefWidth="98.0" text="4,450">
                <font>
                   <Font name="High Tower Text" size="24.0" />
                </font>
             </Label>
-            <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="107.0" layoutY="57.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/shekel.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
-      <Pane id="P1" layoutX="321.0" layoutY="537.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
+      <Pane id="P1" layoutX="321.0" layoutY="484.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="10.0" text="Feed ">
                <font>
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.42" />
-            <Label layoutX="153.0" layoutY="48.0" text="60">
+            <ProgressBar fx:id="feedProgress" layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.42" />
+            <Label fx:id="feedPercentLabel" layoutX="156.0" layoutY="48.0" text="60">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="13.0" layoutX="177.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/percentage.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/wheat-flour.png" />
+                  <Image url="@../../../../images/wheat-flour.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane id="P1" layoutX="321.0" layoutY="430.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
-         <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="10.0" text="Maintenance">
-               <font>
-                  <Font name="High Tower Text" size="18.0" />
-               </font>
-            </Label>
-            <ProgressBar layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.62" />
-            <Label layoutX="153.0" layoutY="48.0" text="40">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="22.0" fitWidth="13.0" layoutX="177.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/percentage.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/optimizing.png" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
-      <Pane id="P1" layoutX="321.0" layoutY="315.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
+      <Pane id="P1" layoutX="321.0" layoutY="361.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="10.0" text="Labor Wages">
                <font>
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.25" />
-            <Label layoutX="153.0" layoutY="48.0" text="20">
+            <ProgressBar fx:id="laborProgress" layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.25" />
+            <Label fx:id="laborPercentLabel" layoutX="153.0" layoutY="48.0" text="20">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="13.0" layoutX="177.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/percentage.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/farmer.png" />
+                  <Image url="@../../../../images/farmer.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane id="P1" layoutX="321.0" layoutY="207.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
+      <Pane id="P1" layoutX="321.0" layoutY="249.0" prefHeight="92.0" prefWidth="214.0" stylesheets="@style.css">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="10.0" text="Treatments">
                <font>
                   <Font name="High Tower Text" size="18.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.9" />
-            <Label layoutX="153.0" layoutY="48.0" text="80">
+            <ProgressBar fx:id="treatmentProgress" layoutX="29.0" layoutY="49.0" prefHeight="18.0" prefWidth="115.0" progress="0.9" />
+            <Label fx:id="treatmentPercentLabel" layoutX="159.0" layoutY="47.0" text="80">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="13.0" layoutX="177.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../Downloads/percentage.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/syringe%20(1).png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="chartContainer" layoutX="581.0" layoutY="187.0" prefHeight="439.0" prefWidth="557.0">
+         <children>
+            <PieChart fx:id="costsPieChart" layoutX="9.0" layoutY="2.0" prefHeight="430.0" prefWidth="532.0" />
          </children>
       </Pane>
    </children>

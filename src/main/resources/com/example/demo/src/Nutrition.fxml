@@ -1,118 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Nutrition1Controller">
    <children>
-      <Pane id="top2" prefHeight="200.0" prefWidth="1200.0" stylesheets="@style.css">
+      <Pane id="top2" prefHeight="180.0" prefWidth="1200.0" stylesheets="@style.css">
          <children>
-            <Label layoutX="89.0" layoutY="36.0" text="Brans">
+            <Label layoutX="89.0" layoutY="36.0" onMouseClicked="#Barns5" text="Brans">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="45.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/barn.png" />
+                  <Image url="@../../../../images/barn.png" />
                </image>
             </ImageView>
-            <Label layoutX="217.0" layoutY="36.0" text="Animals">
+            <Label layoutX="217.0" layoutY="36.0" onMouseClicked="#Animals5" text="Animals">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="180.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/cattle.png" />
+                  <Image url="@../../../../images/cattle.png" />
                </image>
             </ImageView>
-            <Label layoutX="354.0" layoutY="37.0" text="Nutrition">
+            <Label layoutX="354.0" layoutY="37.0" onMouseClicked="#Nutrition5" text="Nutrition">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="323.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/wheat.png" />
+                  <Image url="@../../../../images/wheat.png" />
                </image>
             </ImageView>
-            <Label layoutX="500.0" layoutY="37.0" text="Production">
+            <Label layoutX="500.0" layoutY="37.0" onMouseClicked="#Production5" text="Production">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="467.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/box.png" />
+                  <Image url="@../../../../images/box.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="636.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/syringe.png" />
+                  <Image url="@../../../../images/syringe.png" />
                </image>
             </ImageView>
-            <Label layoutX="667.0" layoutY="38.0" text="Treatment">
+            <Label layoutX="667.0" layoutY="38.0" onMouseClicked="#Treatment5" text="Treatment">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="811.0" layoutY="38.0" text="Costs">
+            <Label layoutX="811.0" layoutY="38.0" onMouseClicked="#Costs5" text="Costs">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="787.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/money-bag.png" />
+                  <Image url="@../../../../images/money-bag.png" />
                </image>
             </ImageView>
-            <Label layoutX="926.0" layoutY="38.0" text="Employees">
+            <Label layoutX="926.0" layoutY="38.0" onMouseClicked="#Employees5" text="Employees">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="126.0" layoutY="156.0" text="Daily Feeding Schedule">
+            <Label layoutX="157.0" layoutY="122.0" text="Daily Feeding Schedule">
                <font>
                   <Font name="High Tower Text Italic" size="36.0" />
                </font>
             </Label>
-            <Label layoutX="1083.0" layoutY="38.0" text="Home">
+            <Label layoutX="1083.0" layoutY="38.0" onMouseClicked="#Home5" text="Home">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="895.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/employees.png" />
+                  <Image url="@../../../../images/employees.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="1048.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/home.png" />
+                  <Image url="@../../../../images/home.png" />
                </image>
             </ImageView>
          </children></Pane>
-      <Button id="button1" layoutX="929.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="227.0" stylesheets="@style.css" text="+  Add Feeding Record">
+      <Button id="button1" fx:id="btnAddFeeding" layoutX="194.0" layoutY="216.0" mnemonicParsing="false" onAction="#onOpenAddMeal" prefHeight="37.0" prefWidth="227.0" stylesheets="@style.css" text="+  Add Feeding Record">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <TableView id="table1" layoutX="333.0" layoutY="285.0" prefHeight="273.0" prefWidth="524.0" stylesheets="@style.css">
-        <columns>
-          <TableColumn prefWidth="130.66668701171875" text="Meal Number" />
-            <TableColumn prefWidth="114.6666259765625" text="Barn" />
-            <TableColumn prefWidth="157.99993896484375" text="     Feed  Type" />
-            <TableColumn prefWidth="100.0" text="Quantity" />
-        </columns>
+      <TableView id="table1" fx:id="feedingTable" layoutX="68.0" layoutY="282.0" prefHeight="344.0" prefWidth="1035.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="feedIdColumn" prefWidth="83.33333587646484" text="Feed ID " />
+            <TableColumn fx:id="barnColumn" prefWidth="86.0" text="Barn ID" />
+            <TableColumn fx:id="dateColumn" prefWidth="126.66676330566406" text="Date" />
+            <TableColumn fx:id="feedTypeColumn" prefWidth="125.333251953125" text="Feed Type" />
+            <TableColumn fx:id="quantityColumn" prefWidth="123.99996948242188" text="Quantity (kg)" />
+            <TableColumn fx:id="waterColumn" prefWidth="103.3333740234375" text="Water (L)" />
+            <TableColumn fx:id="mealColumn" prefWidth="130.0" text="Meal Number" />
+            <TableColumn fx:id="priceColumn" prefWidth="86.66668701171875" text="Price" />
+            <TableColumn fx:id="actionsColumn" prefWidth="148.6666259765625" text="Actions" />
+         </columns>
       </TableView>
+      <TextField fx:id="filterField" layoutX="812.0" layoutY="232.0" prefHeight="32.0" prefWidth="154.0" styleClass="text-filter" stylesheets="@style.css" />
+      <ComboBox fx:id="filterCombo" layoutX="787.0" layoutY="176.0" prefHeight="37.0" prefWidth="198.0" promptText="Searched By :" style="-fx-border-color: #d2b48c; -fx-background-color: #d2b48c; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="combo-filter" stylesheets="@style.css" />
+      <ImageView fx:id="reportIcon" fitHeight="58.0" fitWidth="53.0" layoutX="1029.0" layoutY="195.0" onMouseClicked="#openNutritionReport" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/report.png" />
+         </image>
+      </ImageView>
    </children>
 
 </AnchorPane>

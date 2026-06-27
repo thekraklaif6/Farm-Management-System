@@ -3,56 +3,98 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="680.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
-   <children>
-      <ImageView fitHeight="688.0" fitWidth="458.0" pickOnBounds="true">
+<AnchorPane prefHeight="640.0" prefWidth="1100.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+
+    <children>
+
+        <ImageView id="ranchImage" fitHeight="283.0" fitWidth="287.0" layoutX="799.0" layoutY="14.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../../images/cropped_circle_image.png" />
+            </image>
+        </ImageView>
+
+        <Label id="hed" layoutX="122.0" layoutY="31.0" prefHeight="66.0" prefWidth="523.0" style="-fx-font-size: 45;" styleClass="mainLabel" text="Golden LiveStock">
+            <font>
+                <Font name="High Tower Text" size="25.0" />
+            </font>
+        </Label>
+
+        <Pane id="mainn" layoutX="122.0" layoutY="119.0" prefHeight="475.0" prefWidth="350.0" stylesheets="@style.css">
+
+            <effect>
+                <Blend mode="SOFT_LIGHT" />
+            </effect>
+
+            <children>
+
+                <Label layoutX="129.0" layoutY="27.0" prefHeight="58.0" prefWidth="124.0" text="Sign in">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Label>
+
+                <TextField fx:id="emailField" layoutX="59.0" layoutY="91.0" prefHeight="57.0" prefWidth="264.0" promptText="Username">
+                    <font>
+                        <Font name="MV Boli" size="13.0" />
+                    </font>
+                </TextField>
+
+                <PasswordField fx:id="passwordField" layoutX="59.0" layoutY="179.0" prefHeight="57.0" prefWidth="264.0" promptText="Password">
+                    <font>
+                        <Font name="MV Boli" size="13.0" />
+                    </font>
+                </PasswordField>
+
+                <Hyperlink fx:id="forgotPasswordPage" layoutX="106.0" layoutY="275.0" onAction="#openNewView" prefHeight="24.0" prefWidth="141.0" text="forgot your password?" textFill="#151111">
+               <font>
+                  <Font size="13.0" />
+               </font></Hyperlink>
+
+                <Button id="butt" layoutX="85.0" layoutY="332.0" onAction="#handleLogin" prefHeight="51.0" prefWidth="162.0" text="SIGN IN" textFill="WHITE" />
+
+                <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="18.0" layoutY="108.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../images/user.png" />
+                    </image>
+                </ImageView>
+
+                <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="18.0" layoutY="196.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../images/padlock.png" />
+                    </image>
+                </ImageView>
+
+            </children>
+        </Pane>
+      <ImageView fitHeight="165.0" fitWidth="180.0" layoutX="583.0" layoutY="14.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../images/image1.png" />
+            <Image url="@../../../../images/11zon_cropped.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="85.0" layoutY="197.0" prefHeight="317.0" prefWidth="276.0" style="-fx-background-color: rgba(255,255,255,0.4); -fx-background-radius: 25;">
-         <children>
-            <TextField layoutX="51.0" layoutY="113.0" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;" text="Username">
-               <font>
-                  <Font name="MV Boli" size="13.0" />
-               </font>
-            </TextField>
-            <TextField layoutX="51.0" layoutY="167.0" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15; -fx-border-width: 2;" text="Password">
-               <font>
-                  <Font name="MV Boli" size="13.0" />
-               </font>
-            </TextField>
-            <Button fx:id="Login0" layoutX="86.0" layoutY="229.0" mnemonicParsing="false" onAction="#openHomeView" prefHeight="38.0" prefWidth="103.0" style="-fx-background-color: #00b33c; -fx-background-radius: 12;" text="LOGIN" textFill="WHITE">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
-            </Button>
-            <Hyperlink fx:id="forgotPasswordPage" layoutX="50.0" layoutY="275.0" onAction="#openNewView" style="-fx-text-fill: black;" text="forgot your password?" textFill="#151111">
-               <font>
-                  <Font name="System Bold Italic" size="17.0" />
-               </font>
-            </Hyperlink>
-            <Label layoutX="44.0" layoutY="44.0" prefHeight="58.0" prefWidth="265.0" style="-fx-font-size: 45;" styleClass="welcomeLabel" stylesheets="@../style1.css" text="Welcome !">
-               <font>
-                  <Font size="31.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <Label contentDisplay="CENTER" layoutX="38.0" layoutY="54.0" prefHeight="58.0" prefWidth="381.0" style="-fx-font-size: 45;" styleClass="mainLabel" stylesheets="@../style1.css" text="GoldenPasture Ranch" textAlignment="RIGHT">
-         <font>
-            <Font size="25.0" />
-         </font></Label>
-      <ImageView id="myImage" fitHeight="189.0" fitWidth="327.0" layoutX="66.0" layoutY="121.0" pickOnBounds="true">
+      <ImageView fitHeight="222.0" fitWidth="247.0" layoutX="516.0" layoutY="206.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../images/IMG_7808.PNG" />
+            <Image url="@../../../../images/11zon_cropped (4).png" />
          </image>
       </ImageView>
-   </children>
+      <ImageView fitHeight="265.0" fitWidth="304.0" layoutX="782.0" layoutY="339.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../images/11zon_cropped.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="209.0" layoutX="560.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../images/11zon_cropped (3).png" />
+         </image>
+      </ImageView>
+
+    </children>
 </AnchorPane>

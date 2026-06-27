@@ -39,6 +39,9 @@
 #button2:hover {
        -fx-text-fill: black;
 }
+#add1:hover {
+       -fx-text-fill: black;
+}
 #background1 {
        -fx-background-color: #F5F5F5;
        -fx-border-color:#d2b48c;
@@ -200,4 +203,234 @@
     -fx-background-color: #b08a56;
     -fx-background-radius: 5;
 }
+#mainn {
+    -fx-max-width: 350;
+    -fx-background-color: linear-gradient(to top, #F4DFC3, #FFF6E8);
+    -fx-background-radius: 40;
+    -fx-padding: 25 35;
+    -fx-border-color: white;
+    -fx-border-width: 5;
+    -fx-border-radius: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(150,100,60,0.7), 30, 0, 0, 10);
+    -fx-margin: 20;
+}
 
+
+#backgroundShape {
+    -fx-background-color: linear-gradient(to bottom right, rgb(210,175,120) 60%, transparent 60%);
+    -fx-background-radius: 30;
+    -fx-translate-x: -100;
+    -fx-translate-y: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(90,65,40,0.2), 10, 0, 5, 5);
+}
+
+#hed {
+    -fx-text-alignment: center;
+    -fx-font-weight: 900;
+    -fx-font-size: 30;
+    -fx-text-fill: rgb(120,70,30);
+}
+
+#t {
+    -fx-width: 250;
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-padding: 15 20;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, #f7e6d5, 10, 0, 0, 5);
+    -fx-translate-y: 15;
+}
+
+#t {
+    -fx-prompt-text-fill: rgb(160,130,90);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+#t:focused {
+    -fx-border-color: rgb(175,120,70);
+    -fx-border-width: 0 2 0 2;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0;
+    -fx-outline: none;
+}
+
+#butt {
+    -fx-display: block;
+    -fx-pref-width: 180;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #C58C4D 0%,
+        #E0AA6C 100%
+    );
+    -fx-text-fill: #fffaf3;
+    -fx-padding: 15 0;
+    -fx-margin: 20 auto;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(180,120,60,0.7), 20, 0, 0, 10);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+#butt:hover {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #E3B46F 0%,
+        #F1C98D 100%
+    );
+    -fx-text-fill: white;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, rgba(210,150,80,0.8), 25, 0, 0, 10);
+    -fx-cursor: hand;
+}
+
+#butt:active {
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #A86F3D 0%,
+        #C18B55 100%
+    );
+    -fx-effect: dropshadow(three-pass-box, rgba(130,85,45,0.7), 15, 0, 0, 10);
+}
+
+#f {
+    -fx-padding: 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #a87446;
+    -fx-underline: false;
+    -fx-translate-x: 10;
+    -fx-translate-y: 10;
+}
+
+/*
+ * Modern and Clean CSS for JavaFX Animal Form
+ */
+
+
+/* ======== Text Fields ========*/
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d2b48c;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #a0522d; /* Darker tan on focus */
+    -fx-border-width: 4px;
+}
+
+/* ======== Spinners (for Age, Weight, etc.) ======== */
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4c0a5;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 0;
+    -fx-pref-height: 32px;   /* ↓ صغرناه شوي */
+     -fx-min-height: 32px;
+     -fx-max-height: 32px;
+}
+.spinner  {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4c0a5;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 0;
+}
+/* المنطقة التي تحتوي السهمين */
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color:  #d2b48c;              /* لون أزرار الزيادة والنقصان */
+    -fx-border-color: transparent;
+}.decrement-arrow-button:hover {
+     -fx-
+
+.spinner .increment-arrow-button:hover,
+.spinner background-color: #c7a97e;
+}
+
+/* الأسهم نفسها */
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: #ffffff;              /* لون السهم */
+}
+
+/* حقل النص داخل السبينر */
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6a5b4a;
+    -fx-background-radius: 30px 0 0 30px;
+
+    -fx-pref-height: 26px;   /* ↓ صغّرناه شوي */
+    -fx-min-height: 26px;
+     -fx-max-height: 26px;
+
+}
+
+/* ======== Radio Buttons ======== */
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-border-color: #d2b48c;
+    -fx-background-color: white;
+    -fx-border-radius: 50%;
+    -fx-padding: 4px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #a0522d; /* Darker tan for the selected dot */
+}
+
+/* ======== Date Picker ======== */
+.date-picker .text-field {
+     -fx-border-width: 2px;
+    -fx-border-radius: 15px 0 0 15px;
+    -fx-background-radius: 15px 0 0 15px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #d2b48c;
+    -fx-border-color: #d2b48c;
+    -fx-border-width: 5px;
+    -fx-border-radius: 0 5px 5px 0;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+/* ======== Text Area ======== */
+/* تصميم الـ TextArea */
+.notes-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4c0a5;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-padding: 10;
+    -fx-border-width:3px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #6a5b4a;
+}
+.notes-box .content {
+    -fx-background-color: #ffffff;
+
+}
+.comBox{
+    -fx-background-color :white;
+    -fx-border-color: #d2b48c;
+    -fx-background-color:20;
+    -fx-border-radius:20
+}

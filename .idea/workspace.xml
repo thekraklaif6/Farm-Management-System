@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1647df3-296a-4084-87c4-1d033ba8c4c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CostsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Nutrition1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Nutrition2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TreatmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Employee.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Employee2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/reports/Blank_A4.jrxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/11zon_cropped (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/11zon_cropped (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/11zon_cropped (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/11zon_cropped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/IMG_7846.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/IMG_7848.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cafb2aa5-f4aa-4ef1-ac4c-8093a6fd15eb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/coin (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/coin (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/corn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cow (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cropped_circle_image (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cropped_circle_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/doctor (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/doctor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/farmer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/faucet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/financial-graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/hourglass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/medical-records.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/medical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/milk-bottle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/optimizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/padlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/percentage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/sack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/schedule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/sheep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/shekel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/syringe (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/treatment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/wellness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/wheat-flour.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sheep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/syringe (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AddAnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AddAnimalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AddBarnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AddBarnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AddEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AddEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AddProductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AddProductionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ForgotPasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ForgotPasswordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ProductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ProductionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/AddAnimal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/AddAnimal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/AddBarn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/AddBarn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Costs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Costs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/LOGIN.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/LOGIN.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Nutrition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Nutrition.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Nutrition2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Nutrition2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Production.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Production.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Production2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Production2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Treatment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/Treatment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/forgotPassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/forgotPassword.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/edit.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3FjHPtdm0sdrQdSF8aR0JEiBTdk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master0",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Qashoo/Downloads/DatabaseProject/demo/pom.xml",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1647df3-296a-4084-87c4-1d033ba8c4c8" name="Changes" comment="" />
+      <created>1782581537737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782581537737</updated>
+    </task>
+    <servers />
+  </component>
+</project>

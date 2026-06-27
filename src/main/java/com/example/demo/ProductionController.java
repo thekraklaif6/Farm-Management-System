@@ -90,6 +90,23 @@ public class ProductionController implements Initializable {
             e.printStackTrace();
         }
     }
+    private void switchScene(MouseEvent e, String fxml) throws IOException {
+        Parent root = FXMLLoader.load(
+                Objects.requireNonNull(getClass().getResource("/com/example/demo/src/" + fxml))
+        );
+        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    public void Barns5(MouseEvent e) throws IOException { switchScene(e, "BRANS.fxml"); }
+    public void Production5(MouseEvent e) throws IOException { switchScene(e, "Production.fxml"); }
+    public void Treatment5(MouseEvent e) throws IOException { switchScene(e, "Treatment.fxml"); }
+    public void Costs5(MouseEvent e) throws IOException { switchScene(e, "Costs.fxml"); }
+    public void Employees5(MouseEvent e) throws IOException { switchScene(e, "Employee.fxml"); }
+    public void Home5(MouseEvent e) throws IOException { switchScene(e, "main.fxml"); }
+    public void Animals5(MouseEvent e) throws IOException { switchScene(e, "animal.fxml"); }
+    public void Nutrition5(MouseEvent e) throws IOException { switchScene(e, "Nutrition.fxml"); }
 
 }
 
