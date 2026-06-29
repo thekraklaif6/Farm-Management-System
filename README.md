@@ -4,6 +4,7 @@ A desktop application developed using **JavaFX** and **PostgreSQL** to simplify 
 
 The system provides an intuitive graphical interface that enables farmers and administrators to manage animals, barns, employees, nutrition schedules, treatments, production records, operational costs, and analytical reports in one integrated platform.
 
+📄 **Project Documentation:** [View the Complete Project Report (PDF)](Farm_Management_System_Report.pdf)
 
 ## 📖 Overview
 
