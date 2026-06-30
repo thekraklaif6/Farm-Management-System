@@ -124,23 +124,6 @@ The application generates analytical reports using **JasperReports**, helping us
 | IntelliJ IDEA | Development Environment |
 
 
-
-# 📂 Project Structure
-Farm-Management-System
-│
-├── src
-│   ├── main
-│   │   ├── java
-│   │   └── resources
-│   │
-│   └── images
-│
-├── pom.xml
-├── mvnw
-├── mvnw.cmd
-└── README.md
-
-
 # 📚 Documentation
 
 The repository includes the complete project documentation containing:
